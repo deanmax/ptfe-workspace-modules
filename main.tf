@@ -22,7 +22,7 @@ module "networking" {
 }
 
 module "webserver" {
-  source  = "cmm-training.digitalinnovation.dev/rwang-org/webserver"
+  source  = "cmm-training.digitalinnovation.dev/rwang-org/webserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
@@ -34,7 +34,7 @@ module "webserver" {
 }
 
 module "appserver" {
-  source  = "cmm-training.digitalinnovation.dev/rwang-org/appserver"
+  source  = "cmm-training.digitalinnovation.dev/rwang-org/appserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
@@ -46,7 +46,7 @@ module "appserver" {
 }
 
 module "dataserver" {
-  source  = "cmm-training.digitalinnovation.dev/rwang-org/dataserver"
+  source  = "cmm-training.digitalinnovation.dev/rwang-org/dataserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
